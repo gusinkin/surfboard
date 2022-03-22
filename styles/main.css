@@ -354,6 +354,16 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .menu--vertical .menu__list {
+    gap: 0.8888888889rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu--vertical .menu__item {
+    margin-right: 0;
+  }
+}
 .menu--vertical .menu__link {
   color: #fff;
   font-size: 2rem;

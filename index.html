@@ -22,7 +22,7 @@
   <body>
     <div class="wrapper">
       <div class="maincontent">
-        <section class="section hero">
+        <section data-section-id="hero" data-sidemenu-theme="light" class="section hero">
           <div class="container hero__container">
             <div class="header">
               <a href="./index.html" class="logo">
@@ -31,25 +31,25 @@
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a data-scroll-to="benefits" href="#" class="menu__link">О нас</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Серфборды</a>
+                    <a data-scroll-to="products" href="#" class="menu__link">Серфборды</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Команда</a>
+                    <a data-scroll-to="team" href="#" class="menu__link">Команда</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Меню</a>
+                    <a data-scroll-to="acco" href="#" class="menu__link">Меню</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
+                    <a data-scroll-to="reviews" href="#" class="menu__link">Отзывы</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Как мы работаем</a>
+                    <a data-scroll-to="video" href="#" class="menu__link">Как мы работаем</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a data-scroll-to="map" href="#" class="menu__link">Контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -63,7 +63,7 @@
             <div class="hero__content">
               <h2 class="title title--hero">Профессиональные доски для серфинга</h2>
               <p class="hero__desc">Самый большой выбор серфбордов в мире</p>
-              <a href="#" class="button button--yellow">Заказать</a>
+              <a data-scroll-to="order" href="#" class="button button--yellow">Заказать</a>
             </div>
             <ul class="hero__list">
               <li class="hero__item">
@@ -87,7 +87,7 @@
             </ul>
           </div>
         </section>
-        <section class="section benefits">
+        <section data-section-id="benefits" data-sidemenu-theme="dark" class="section benefits">
           <div class="container section__container">
             <div class="section__headline">
               <h2 class="title title--benefits">Почему Surfboard?</h2>
@@ -155,7 +155,7 @@
             </ul>
           </div>
         </section>
-        <section class="section products">
+        <section data-section-id="products" data-sidemenu-theme="dark" class="section products">
           <div class="container section__container">
             <div class="products__slider">
               <div class="products__arrows">
@@ -255,7 +255,9 @@
                       <div class="product__buy">
                         <div class="product__price">7000 ₽</div>
                         <div class="product__button">
-                          <a href="#" class="button button--yellow">Заказать</a>
+                          <a data-scroll-to="order" href="#" class="button button--yellow"
+                            >Заказать</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -345,7 +347,9 @@
                       <div class="product__buy">
                         <div class="product__price">12000 ₽</div>
                         <div class="product__button">
-                          <a href="#" class="button button--yellow">Заказать</a>
+                          <a data-scroll-to="order" href="#" class="button button--yellow"
+                            >Заказать</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -355,7 +359,7 @@
             </div>
           </div>
         </section>
-        <section class="section team">
+        <section data-section-id="team" data-sidemenu-theme="dark" class="section team">
           <div class="container section__container">
             <h2 class="title title--team">Команда</h2>
             <ul class="team__list team__list--desktop">
@@ -460,7 +464,54 @@
             </ul>
           </div>
         </section>
-        <section class="section reviews">
+        <section data-section-id="acco" data-sidemenu-theme="light" class="section acco">
+          <h2 class="title title--acco">Меню</h2>
+          <ul class="acco__list">
+            <li class="acco__item">
+              <a href="" class="acco__button" style="background-image: url(../img/bg/Slide1.jpg)">
+                <div class="acco__button-text">Лонгборды</div>
+              </a>
+              <div class="acco__content">
+                <div class="acco__text">
+                  <p>
+                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться
+                    на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и
+                    пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="acco__item">
+              <a href="" class="acco__button" style="background-image: url(../img/bg/Slide2.jpg)">
+                <div class="acco__button-text">Шортборды</div>
+              </a>
+              <div class="acco__content">
+                <div class="acco__text">
+                  <p>
+                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться
+                    на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и
+                    пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="acco__item">
+              <a href="" class="acco__button" style="background-image: url(../img/bg/Slide3.jpg)">
+                <div class="acco__button-text">Софттопы</div>
+              </a>
+              <div class="acco__content">
+                <div class="acco__text">
+                  <p>
+                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться
+                    на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и
+                    пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section data-section-id="reviews" data-sidemenu-theme="dark" class="section reviews">
           <div class="container section__container">
             <h2 class="title title--reviews">Отзывы</h2>
             <div class="reviews__wrapper">
@@ -569,7 +620,51 @@
             </div>
           </div>
         </section>
-        <section class="section order">
+        <section data-section-id="video" data-sidemenu-theme="dark" class="section video">
+          <div class="container section__container">
+            <h2 class="title title--video">Как мы работаем</h2>
+            <div class="video__wrapper">
+              <div class="video__player">
+                <video src="./video/videoplayback.mp4" id="player" poster="./img/bg/poster.jpg">
+                  <source src="" type="" />
+                </video>
+                <button class="video__btn">
+                  <svg class="play video__btn-img">
+                    <use xlink:href="./img/svg/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="video__toolbar">
+                <div class="duration">
+                  <div class="duration__btn-wrap">
+                    <button class="play duration__btn"></button>
+                  </div>
+
+                  <div class="duration__length-wrap">
+                    <input type="range" class="duration__length" id="durationLevel" />
+                  </div>
+                </div>
+
+                <div class="sound" id="soundBtn">
+                  <button class="sound__btn" id="dynamic">
+                    <svg class="sound__mic" id="mic">
+                      <use xlink:href="./img/svg/sprite.svg#sound"></use>
+                    </svg>
+                  </button>
+                  <div class="sound__volume">
+                    <input
+                      type="range"
+                      class="duration__length duration__length--other"
+                      id="micLevel"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-section-id="order" data-sidemenu-theme="light" class="section order">
           <div class="container section__container">
             <h2 class="title title--order">Закажите доску</h2>
             <form action="" class="form">
@@ -644,8 +739,8 @@
             </form>
           </div>
         </section>
-        <section class="section map">
-          <div class="map-item"></div>
+        <section data-section-id="map" data-sidemenu-theme="dark" class="section map">
+          <div class="map__item" id="map"></div>
           <footer class="footer">
             <div class="container footer__container">
               <address class="contacts">
@@ -690,31 +785,31 @@
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
         <li class="fixed-menu__item fixed-menu__item--active">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="hero" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="benefits" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="products" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="team" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="acco" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="reviews" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="video" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="order" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="map" href="" class="fixed-menu__link"></a>
         </li>
       </ul>
     </nav>
@@ -757,12 +852,29 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"
+      integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
+      integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="./script/onePageScroll.js"></script>
     <script src="./script/hamburger.js"></script>
     <script src="./script/products.js"></script>
     <script src="./script/team.js"></script>
+    <script src="./script/acco.js"></script>
     <script src="./script/reviews.js"></script>
+    <script src="./script/video.js"></script>
     <script src="./script/form.js"></script>
+    <script src="./script/map.js"></script>
   </body>
 </html>

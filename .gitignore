@@ -1,0 +1,4 @@
+/node_modules/*
+prepros.config
+/styles/blocks/*
+/styles/main.scss

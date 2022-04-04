@@ -31,4 +31,3 @@ const init = () => {
   myMap.behaviors.disable('scrollZoom')
 }
 ymaps.ready(init)
-console.log(myMap.behaviors)

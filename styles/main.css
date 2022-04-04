@@ -1643,6 +1643,10 @@ img {
             flex-direction: column;
   }
 }
+.footer .phone::before {
+  background: url(../img/icons/phone.png) no-repeat;
+  background-size: contain;
+}
 
 .contacts {
   color: #292929;
@@ -1688,9 +1692,15 @@ img {
 .socials__item:last-child {
   margin-right: 0px;
 }
+.socials__item:hover .socials__pic {
+  fill: #292929;
+}
 .socials__pic {
   width: 100%;
   height: 100%;
+  fill: #b3b3b3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .fixed-menu {

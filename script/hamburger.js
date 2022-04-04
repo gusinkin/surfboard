@@ -10,3 +10,8 @@ closeButton.addEventListener('click', (e) => {
   e.preventDefault()
   hamburgerMenu.classList.remove('active')
 })
+
+$('[data-scroll-to').click((e) => {
+  e.preventDefault()
+  hamburgerMenu.classList.remove('active')
+})

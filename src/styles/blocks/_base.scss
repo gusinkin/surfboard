@@ -1,0 +1,169 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+$z-fixed-menu: 10;
+$z-hamburger-menu: 100;
+$z-modal: 1000;
+$white: #fff;
+$body: #666;
+$black: #000;
+$yellow: #fedb3f;
+$blue: #1968b1;
+$brightYellow: #ffd517;
+$tablets: 768px;
+$phones: 480px;
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  font-size: $baseFontSize;
+  line-height: 1.42;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+  @include phones {
+    font-size: 3.3vmin;
+  }
+}
+body,
+html {
+  height: 100%;
+}
+
+body {
+  color: $body;
+  background: $white;
+}
+button {
+  cursor: pointer;
+  border: 0;
+}
+section {
+  min-height: 650px;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+footer {
+  position: relative;
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+.container {
+  width: 95%;
+  max-width: $containerWidth;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 2.67rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $black;
+  &--hero {
+    line-height: 1.21;
+    color: $white;
+    margin-bottom: 0.83rem;
+    @include tablets {
+      margin-bottom: rem(8px);
+    }
+    @include phones {
+      line-height: 1;
+    }
+  }
+  &--benefits {
+    margin-bottom: 1.11rem;
+    text-align: center;
+    @include tablets {
+      margin-bottom: rem(22px);
+    }
+    @include phones {
+      margin-bottom: rem(8px);
+    }
+  }
+  &--team {
+    margin-bottom: rem(55px);
+    @include tablets {
+      margin-bottom: rem(40px);
+    }
+  }
+  &--reviews {
+    margin-bottom: 1.94rem;
+    text-align: center;
+    @include tablets {
+      margin-bottom: rem(54px);
+    }
+  }
+  &--video {
+    margin-bottom: rem(32px);
+  }
+  &--acco {
+    color: $white;
+    padding-top: rem(112px);
+    @include tablets {
+      padding-top: rem(95px);
+    }
+    @include phones {
+      padding-top: rem(81px);
+    }
+    padding-left: rem(83px);
+    @include tablets {
+      padding-left: rem(35px);
+    }
+    @include phones {
+      padding-left: rem(10px);
+    }
+  }
+  &--order {
+    color: $white;
+    margin-bottom: 3.28rem;
+    text-align: center;
+    @include tablets {
+      margin-bottom: rem(32px);
+    }
+  }
+}

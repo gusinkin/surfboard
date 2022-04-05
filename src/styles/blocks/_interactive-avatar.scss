@@ -1,0 +1,26 @@
+.interactive-avatar {
+  width: 4.44rem;
+  height: 4.44rem;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.4s;
+  &--active {
+    border-color: $yellow;
+  }
+  &__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

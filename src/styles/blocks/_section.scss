@@ -1,0 +1,25 @@
+.section {
+  height: 100%;
+  min-height: 650px;
+  &__container {
+    justify-content: center;
+    align-items: center;
+  }
+  &__headline {
+    text-align: center;
+    margin-bottom: 2.72rem;
+    @include tablets {
+      margin-bottom: rem(59px);
+    }
+    @include phones {
+      margin-bottom: rem(64px);
+    }
+    .headline__subtitle {
+      padding: 0 16%;
+      line-height: 1.2;
+      @include phones {
+      }
+      padding: 0 6%;
+    }
+  }
+}

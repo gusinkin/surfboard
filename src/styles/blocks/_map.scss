@@ -1,0 +1,65 @@
+.map {
+  position: relative;
+  &__item {
+    height: 100%;
+    width: 100%;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: rem(23px) 0;
+  background: $white;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include phones {
+      flex-direction: column;
+    }
+  }
+  & .phone::before {
+    background: url(./img/icons/phone.png) no-repeat;
+    background-size: contain;
+  }
+}
+.contacts {
+  color: #292929;
+  &__address {
+    font-size: rem(21px);
+    font-style: normal;
+    font-weight: 400;
+  }
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    display: inline-block;
+    &:last-child {
+      margin-right: 0px;
+    }
+    &:hover .socials__pic {
+      fill: #292929;
+    }
+  }
+  &__pic {
+    width: 100%;
+    height: 100%;
+    fill: #b3b3b3;
+    transition: 0.3s;
+  }
+}

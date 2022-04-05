@@ -1,0 +1,75 @@
+.order {
+  background: url(./img/bg/form-bg-light.png) no-repeat center center/100%;
+  background-size: cover;
+  background-color: #2b2b2b;
+  color: $white;
+}
+.form {
+  display: flex;
+  column-gap: 22px;
+  @include tablets {
+    flex-direction: column;
+    padding: 0 17%;
+  }
+  @include phones {
+    padding: 0;
+  }
+  &__column {
+    flex: 1;
+  }
+  &__row {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 0.5rem;
+    @include tablets {
+      margin-bottom: rem(12px);
+    }
+    @include phones {
+      margin-bottom: rem(15px);
+    }
+  }
+  &__item {
+    flex: 1;
+  }
+  &__input {
+    width: 100%;
+    padding: rem(14px) rem(11px);
+    line-height: 1.42;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    &--textarea {
+      height: 8.5rem;
+      resize: none;
+      margin-bottom: 1.11rem;
+      @include tablets {
+        height: rem(83px);
+      }
+    }
+    @include tablets {
+      padding: rem(4px) rem(5px);
+    }
+    &:focus {
+      border-color: $yellow;
+      outline: none;
+    }
+  }
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0.5rem;
+    @include phones {
+      justify-content: center;
+    }
+  }
+  &__buttons {
+    margin-top: 2.56rem;
+    @include tablets {
+      display: flex;
+      justify-content: center;
+      margin-top: rem(24px);
+    }
+  }
+}
+.input-error {
+  border-color: red;
+}

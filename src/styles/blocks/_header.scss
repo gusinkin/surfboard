@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: rem(24px) 0;
+  @include tablets {
+    background: $blue;
+    padding: rem(24px) 2.5%;
+    align-items: center;
+  }
+  .logo {
+    flex-shrink: 0;
+  }
+  &__phone {
+    @include tablets {
+      display: none;
+    }
+  }
+}
+.phone {
+  font-size: 1.22rem;
+  font-weight: 700;
+  white-space: nowrap;
+  &::before {
+    content: '';
+    background: url(./img/icons/Frame.png) no-repeat;
+    width: rem(13px);
+    height: rem(15px);
+    margin-right: rem(10px);
+    display: inline-block;
+  }
+}

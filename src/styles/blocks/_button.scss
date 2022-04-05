@@ -1,0 +1,28 @@
+.button {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 21px 41px;
+  transition: 0.4s;
+  &--yellow {
+    background: $yellow;
+    color: $black;
+    &:hover {
+      background: $brightYellow;
+    }
+  }
+  &--transparent {
+    background: transparent;
+    color: $white;
+    padding: 21px 22px;
+    text-transform: none;
+    font-weight: 400;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

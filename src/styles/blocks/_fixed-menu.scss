@@ -19,6 +19,7 @@
     height: 16px;
     border-radius: 50%;
     border: 1px solid transparent;
+    transition: border-color 0.4s;
     display: block;
     position: relative;
     &::before {

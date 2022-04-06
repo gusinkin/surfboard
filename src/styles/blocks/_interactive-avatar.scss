@@ -9,6 +9,9 @@
   &--active {
     border-color: $yellow;
   }
+  &:hover {
+    border-color: $yellow;
+  }
   &__link {
     display: block;
     position: absolute;

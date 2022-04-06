@@ -47,5 +47,8 @@
   &__link {
     font-weight: 700;
     white-space: nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

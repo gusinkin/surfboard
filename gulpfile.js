@@ -118,7 +118,7 @@ task('icons', () => {
 task('server', () => {
   browserSync.init({
     server: {
-      baseDir: './dist',
+      baseDir: './docs',
     },
     open: false,
   })

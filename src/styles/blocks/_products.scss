@@ -126,6 +126,7 @@
     gap: rem(60px);
     @include tablets {
       justify-content: center;
+      margin-bottom: rem(20px);
     }
   }
   &__price {

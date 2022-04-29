@@ -122,7 +122,9 @@ if (isMobile) {
       let scrollDirection = ''
       if (direction === 'up') scrollDirection = 'next'
       if (direction === 'down') scrollDirection = 'prev'
-      scroller[scrollDirection]()
+      if (scrollDirection) {
+        scroller[scrollDirection]()
+      }
     },
   })
 }
